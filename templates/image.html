@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'Styles/style.css')}}"> 
+</head>
+<body>
+    <h1 align="center">Image</h1>
+
+    <img src="{{ url_for('static', filename='Images/image.png')}}" alt="Image" />
+
+    <p>This is an example to render image in HTML</p> 
+
+    <script src="{{url_for('static' , filename = 'Scripts/app.js')}}"></script> 
+    
+</body>
+</html>

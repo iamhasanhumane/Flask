@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Form</title>
+</head>
+<body>
+    <h1 align="center">Update User - {{ user.name }}</h1>
+
+    <br><br>
+
+    <form action="/user_update/{{ user.id }}" method="POST">   
+        <label for="name">Name: </label> 
+        <input id="name" type="text" name="user_name" value = "{{ user.name }}" required/>
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="user_email" value = "{{ user.email }}" required/> 
+
+        <br><br>
+
+        <label for="age">Age: </label>
+        <input id="age" type="number" name="user_age" min="1" max="120" step="1" value = "{{ user.age }}" required/>  
+
+        <br><br>
+
+        <button type="submit" value="Submit">Add </button>   
+    </form>
+</body>
+</html>

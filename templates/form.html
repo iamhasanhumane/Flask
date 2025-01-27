@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1 align="center">User Details</h1> 
+
+    <form action="/form" method="POST"> 
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="user_name" required/>
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="user_email" required/> 
+
+        <br><br>
+
+        <label for="password">Password : </label>  
+        <input id="password" type="password" name="user_password"  required/>  
+
+        <br><br>
+
+        <button type="submit" value="Submit">Add </button>   
+    </form>
+</body>
+</html>

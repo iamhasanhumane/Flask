@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+
+    <h1 align="center">List of Users</h1>
+    {% for user in users %}
+       <ul>
+         <li>
+            <h1>{{user.name}}</h1>
+            <h2>{{user.email}}</h2>  
+            <a href="/user_delete/{{ user.id }}">Delete</a> 
+         </li>
+       </ul>
+    {% endfor %} 
+</body>
+</html>
